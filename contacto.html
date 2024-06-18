@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Estopa no oficial Contacto">
+        <title>Contacto - ESTOPA</title>
+        <link rel="icon" href="media/icons/favicon_estopa.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="estils/header.css">
+        <link rel="stylesheet" href="estils/contacto.css">
+        <link rel="stylesheet" href="estils/footer.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="inicio.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="conciertos.html">CONCIERTOS</a>
+                    </li>
+                    <li>
+                        <a href="discografia.html">DISCOGRAFÍA</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">GALERÍA</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">CONTACTO</a>
+                    </li>
+                    <li>
+                        <a href="https://estopa.premiummerch.net/" target="_blank">TIENDA</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 id="inicio">
+                <img src="media/logo/logo_estopa.png" alt="LOGO ESTOPA">
+            </h1>
+        </header>
+        <div class="contenidor">
+            <form id="izquierda" method="post" enctype="multipart/form-data" name="form" action="mailto:heredia@herediaproducciones.com?subject=Contacto">
+                <fieldset>
+                    <legend>¡Cuéntanos!</legend>
+                        <ul>
+                            <li>
+                                <label for="nombre">Nombre</label>
+                                    <input id="nombre" name="Nombre" type="text" placeholder="Escribe tu nombre completo" required tabindex="1">
+                            </li>
+                            <li>
+                                <label for="email">E-mail</label>
+                                    <input id="email" name="E-mail" type="text" placeholder="Escribe tu E-mail" required tabindex="2" pattern="^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;">
+                            </li>
+                            <li>
+                                <label for="web">Página web</label>
+                                    <input id="web" name="Web" type="url" placeholder="Escribe tu página web" tabindex="3" value="https://www.">
+                            </li>
+                            <li>
+                                <label for="mensaje">Mensaje</label>
+                                    <textarea id="mensaje" name="Mensaje" type="text" placeholder="Escribe tu mensaje" required tabindex="4"></textarea>
+                            </li>
+                        </ul>
+                        <button type="submit" tabindex="5">Enviar</button>
+                </fieldset>
+            </form>
+            <form id="derecha" method="post" enctype="multipart/form-data" name="form" action="mailto:heredia@herediaproducciones.com?subject=Contacto">
+                <fieldset>
+                    <legend>Planifica tu evento</legend>
+                        <ul>
+                            <li>
+                                <label for="nombre2">Nombre</label>
+                                    <input id="nombre2" name="Nombre" type="text" placeholder="Escribe tu nombre completo" required tabindex="1">
+                            </li>
+                            <li>
+                                <label for="email2">E-mail</label>
+                                    <input id="email2" name="E-mail" type="text" placeholder="Escribe tu E-mail" required tabindex="2" pattern="^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;">
+                            </li>
+                            <li>
+                                <label for="direccion2">Dirección</label>
+                                    <input id="direccion2" name="Dirección" type="text" required tabindex="6">
+                            </li>
+                            <li>
+                                <label for="provincia">Provincia</label>
+                                    <select id="provincia" name="Provincia" required tabindex="7">
+                                        <optgroup label="Andalucía">
+                                            <option>Almería</option>
+                                            <option>Cádiz</option>
+                                            <option>Córdoba</option>
+                                            <option>Granada</option>
+                                            <option>Huelva</option>
+                                            <option>Jaén</option>
+                                            <option>Málaga</option>
+                                            <option>Sevilla</option>
+                                        </optgroup>
+                                        <optgroup label="Aragón">
+                                            <option>Huesca</option>
+                                            <option>Teruel</option>
+                                            <option>Zaragoza</option>
+                                        </optgroup>
+                                        <optgroup label="Asturias">
+                                            <option>Asturias</option>
+                                        </optgroup>
+                                        <optgroup label="Balears, Illes">
+                                            <option>Balears, Illes</option>
+                                        </optgroup>
+                                        <optgroup label="Canarias">
+                                            <option>Palmas, Las</option>
+                                            <option>Santa Cruz de Tenerife</option>
+                                        </optgroup>
+                                        <optgroup label="Cantabria">
+                                            <option>Cantabria</option>
+                                        </optgroup>
+                                        <optgroup label="Castilla y León">
+                                            <option>Ávila</option>
+                                            <option>Burgos</option>
+                                            <option>León</option>
+                                            <option>Palencia</option>
+                                            <option>Salamanca</option>
+                                            <option>Segovia</option>
+                                            <option>Soria</option>
+                                            <option>Valladolid</option>
+                                            <option>Zamora</option>
+                                        </optgroup>
+                                        <optgroup label="Castilla-La Mancha">
+                                            <option>Albacete</option>
+                                            <option>Ciudad Real</option>
+                                            <option>Cuenca</option>
+                                            <option>Guadalajara</option>
+                                            <option>Toledo</option>
+                                        </optgroup>
+                                        <optgroup label="Catalunya">
+                                            <option selected>Barcelona</option>
+                                            <option>Girona</option>
+                                            <option>Lleida</option>
+                                            <option>Tarragona</option>
+                                        </optgroup>
+                                        <optgroup label="Comunitat Valenciana">
+                                            <option>Alacant</option>
+                                            <option>Castelló</option>
+                                            <option>València</option>
+                                        </optgroup>
+                                        <optgroup label="Extremadura">
+                                            <option>Badajoz</option>
+                                            <option>Cáceres</option>
+                                        </optgroup>
+                                        <optgroup label="Galicia">
+                                            <option>Corunha, A</option>
+                                            <option>Lugo</option>
+                                            <option>Ourense</option>
+                                            <option>Pontevedra</option>
+                                        </optgroup>
+                                        <optgroup label="Madrid, Comunidad de">
+                                            <option>Madrid</option>
+                                        </optgroup>
+                                        <optgroup label="Murcia, Región de">
+                                            <option>Murcia</option>
+                                        </optgroup>
+                                        <optgroup label="Navarra, Comunidad Foral de">
+                                            <option>Navarra</option>
+                                        </optgroup>
+                                        <optgroup label="País Vasco">
+                                            <option>Araba</option>
+                                            <option>Bizkaia</option>
+                                            <option>Gipuzkoa</option>
+                                        </optgroup>
+                                        <optgroup label="Rioja, La">
+                                            <option>Rioja, La</option>
+                                        </optgroup>
+                                        <optgroup label="Ciudades Autónomas">
+                                            <option>Ceuta</option>
+                                            <option>Melilla</option>
+                                        </optgroup>
+                                    </select>
+                            </li>
+                            <li>
+                                <label for="fecha">Fecha</label>
+                                    <input id="fecha" name="Fecha" type="date" required tabindex="8" value="today">
+                            </li>
+                            <li>
+                                <label for="hora">Hora</label>
+                                    <input id="hora" name="Hora" type="time" required tabindex="9">
+                            </li>
+                            <li>
+                                <label for="mensaje2">Mensaje</label>
+                                    <textarea id="mensaje2" name="Mensaje" type="text" placeholder="Escribe tu mensaje" required tabindex="4"></textarea>
+                            </li>
+                        </ul>
+                        <button type="submit" tabindex="10">Solicita presupuesto</button>
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            <nav class="redes">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/estopaoficial" target="_blank"><img src="media/icons/face-icono.png" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/estopaoficial" target="_blank"><img src="media/icons/twitter-icono.png" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC5eRTh1u9ZQiFc9Iq569O2Q" target="_blank"><img src="media/icons/youtube-icono.png" alt="Youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/estopaoficial/" target="_blank"><img src="media/icons/instagram-icono.png" alt="Instagram"></a>
+                    </li>
+                </ul>
+            </nav>
+            <p><span>Created by: <a href="https://github.com/suli92bcn?tab=repositories" target="_blank">suli92bcn</a>©</span></p>
+        </footer>
+        <script src="js/funcions.js"></script>
+    </body>
+</html>

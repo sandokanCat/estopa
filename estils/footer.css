@@ -1,0 +1,36 @@
+.redes ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 30px;
+    gap: 50px;
+}
+.redes li {
+    display: inline-flex;
+}
+.redes a {
+    background-color: rgb(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+}
+.redes a:hover {
+    background-color: rgb(108, 8, 133);
+    transition: 1s;
+}
+.redes a:focus {
+    background-color: rgb(108, 8, 133);
+    box-shadow: none;
+    outline: none;
+}
+footer span {
+    position: absolute;
+    right: 20px;
+    color: black;
+}
+footer span a {
+    color: black;
+    text-decoration: none;
+}
+footer span a:hover {
+    text-decoration: underline;
+}
