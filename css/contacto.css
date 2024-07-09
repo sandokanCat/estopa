@@ -1,0 +1,80 @@
+@import url(header.css);
+@import url(footer.css);
+#izquierda {
+    display: inline-flex;
+    justify-content: flex-start;
+}
+#derecha {
+    display: inline-flex;
+    justify-content: flex-end;
+}
+fieldset {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+}
+fieldset:hover {
+    border-color: rgb(108, 8, 133);
+    transition: 1s;
+}
+legend {
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(108, 8, 133);
+}
+form ul {
+    list-style: none;
+}
+form li {
+    margin-bottom: 30px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input, textarea, select {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+}
+optgroup {
+    color: rgb(108, 8, 133);
+}
+option {
+    color: black;
+}
+input:hover, textarea:hover, select:hover {
+    border-color: rgb(108, 8, 133);
+    transition: 1s;
+}
+input:focus, textarea:focus {
+    background-color: rgb(108, 8, 133);
+    border-color: white;
+    box-shadow: none;
+    outline: none;
+}
+#mensaje {
+    height: 350px;
+}
+button {
+    margin-top: 30px;
+    background-color: rgb(108, 8, 133);
+    border: rgb(108, 8, 133) solid 2px;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+button:hover {
+    border: white solid 2px;
+    transition: 1s;
+    cursor: pointer;
+}
+button:focus {
+    border: white solid 2px;
+    box-shadow: none;
+    outline: none;
+}

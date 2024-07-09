@@ -1,0 +1,21 @@
+.noscript-warning {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.aviso {
+    margin-top: 0;
+}
+noscript .noscript-warning {
+    display: block;
+}
+@media screen and (max-width: 759px) {
+    .noscript-warning {
+        text-align: justify;
+    }
+}

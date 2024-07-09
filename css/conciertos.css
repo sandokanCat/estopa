@@ -1,0 +1,30 @@
+@import url(header.css);
+@import url(footer.css);
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+th, td {
+    padding: 10px 10px 10px 10px;
+    /* min-width: 100px; */
+}
+th {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.textLila {
+    color: rgb(108, 8, 133);
+}
+td a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(108, 8, 133);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border-color:rgb(108, 8, 133) solid 2px;
+}
+td a:hover {
+    border: white solid 2px;
+    transition: 1s;
+}

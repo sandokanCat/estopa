@@ -1,0 +1,16 @@
+@import url(header.css);
+@import url(footer.css);
+figure {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+video {
+    max-width: 500px;
+}
+figcaption {
+    max-width: 550px;
+    text-align: left;
+    margin-left: 50px;
+}
