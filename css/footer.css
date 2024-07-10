@@ -25,12 +25,23 @@
 footer span {
     position: absolute;
     right: 20px;
+    margin-top: 50px;
     color: black;
 }
 footer span a {
     color: black;
     text-decoration: none;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    border: none;
 }
 footer span a:hover {
     text-decoration: underline;
+    border: none;
+}
+@media screen and (max-width: 759px){
+    .redes ul {
+        gap: 30px;
+    }
 }

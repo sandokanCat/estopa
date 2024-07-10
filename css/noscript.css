@@ -10,12 +10,19 @@
 }
 .aviso {
     margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-size: x-large;
 }
 noscript .noscript-warning {
     display: block;
+    top: 63px;
 }
 @media screen and (max-width: 759px) {
     .noscript-warning {
         text-align: justify;
+    }
+    .aviso {
+        font-size: large;
     }
 }
