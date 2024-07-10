@@ -15,7 +15,7 @@
 .textLila {
     color: rgb(108, 8, 133);
 }
-p a {
+.conciertos a {
     color: white;
     text-decoration: none;
     background-color: rgb(108, 8, 133);
@@ -23,7 +23,7 @@ p a {
     border-radius: 10px;
     border:rgb(108, 8, 133) solid 2px;
 }
-p a:hover {
+.conciertos a:hover {
     border: white solid 2px;
     transition: 1s;
 }
