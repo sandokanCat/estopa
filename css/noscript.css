@@ -3,26 +3,20 @@
     position: fixed;
     z-index: 99999;
     width: 100%;
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: rgba(255, 0, 0, 0.6);
     color: white;
-    padding: 5px 10px;
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px 10px;
     text-align: center;
-}
-.aviso {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: white;
-    font-size: x-large;
+    min-height: auto;
+    top: 73px;
 }
 noscript .noscript-warning {
     display: block;
-    top: 63px;
 }
 @media screen and (max-width: 759px) {
     .noscript-warning {
         text-align: justify;
-    }
-    .aviso {
-        font-size: large;
     }
 }

@@ -5,75 +5,90 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Estopa no oficial Discografía">
         <title>Discografía - ESTOPA</title>
-        <link rel="icon" href="media/icon/favicon_estopa.ico" type="image/x-icon"/>
+        <link rel="icon" href="img/favicon_estopa.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="css/discografia.css">
     </head>
     <body>
 <!-- NOSCRIPT AVISO -->
         <noscript>
             <div class="noscript-warning">
-                <h2 class="aviso">ADVERTENCIA:</h2>
-                    <p>Esta página requiere JavaScript para funcionar correctamente. Por favor, habilite JavaScript en su navegador y vuelva a cargar la página.</p>
+                <p>ADVERTENCIA: Esta página requiere JavaScript para funcionar correctamente. Por favor, habilite JavaScript en su navegador y vuelva a cargar la página.</p>
             </div>
         </noscript>
 <!--//FIN NOSCRIPT AVISO -->
         <header>
             <nav class="menu">
                 <ul>
-                    <li>
-                        <a href="index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="conciertos.html">CONCIERTOS</a>
-                    </li>
-                    <li>
-                        <a href="discografia.html">DISCOGRAFÍA</a>
-                    </li>
-                    <li>
-                        <a href="galeria.html">GALERÍA</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="https://estopa.premiummerch.net/" target="_blank">TIENDA</a>
+                    <li><a class="link-menu" href="index.html">INICIO</a></li>
+                    <li><a class="link-menu" href="conciertos.html">CONCIERTOS</a></li>
+                    <li><a class="link-menu" href="discografia.html">DISCOGRAFÍA</a></li>
+                    <li><a class="link-menu" href="galeria.html">GALERÍA</a></li>
+                    <li><a id="contactoLink" class="link-menu" href="contacto.html" target="_blank">CONTACTO</a></li>
+                    <li><a class="link-menu" href="https://estopa.premiummerch.net/" target="_blank">TIENDA</a></li>
+                    <li id="burguer">
+                        <a href="#">
+                            <svg width="20" height="20" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.42857 7.33831H38.5714C39.3604 7.33831 40 6.69354 40 5.89809V2.29755C40 1.5021 39.3604 0.85733 38.5714 0.85733H1.42857C0.639554 0.85733 0 1.5021 0 2.29755V5.89809C0 6.69354 0.639554 7.33831 1.42857 7.33831ZM1.42857 21.7405H38.5714C39.3604 21.7405 40 21.0957 40 20.3003V16.6997C40 15.9043 39.3604 15.2595 38.5714 15.2595H1.42857C0.639554 15.2595 0 15.9043 0 16.6997V20.3003C0 21.0957 0.639554 21.7405 1.42857 21.7405ZM1.42857 36.1427H38.5714C39.3604 36.1427 40 35.4979 40 34.7024V31.1019C40 30.3064 39.3604 29.6617 38.5714 29.6617H1.42857C0.639554 29.6617 0 30.3064 0 31.1019V34.7024C0 35.4979 0.639554 36.1427 1.42857 36.1427Z" fill="white"/>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </nav>
+<!-- VENTANA MODAL -->
+            <div id="contactoModal" class="modal">
+                <div id="modalContenido">
+                    <span id="cerrarModal" title="Cerrar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 12 12" fill="none">
+                            <circle cx="6" cy="6" r="6" fill="rgb(108, 8, 133)"/>
+                            <line x1="3" y1="3" x2="9" y2="9" stroke="white" stroke-width="1.5"/>
+                            <line x1="9" y1="3" x2="3" y2="9" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+                    <iframe id="contactoVisor" src="contacto.html"></iframe>
+                </div>
+            </div>
+<!--//FIN VENTANA MODAL -->
             <h1 id="inicio">
-                <img src="media/logo/logo_estopa.png" alt="LOGO ESTOPA">
+                <img src="img/logo_estopa.png" alt="LOGO ESTOPA">
             </h1>
         </header>
         <div class="contenidor">
+            <div id="columnas">
             <main>
                 <h2>Discografía</h2>
-
-<!-- carrousel -->
-<div class="carrousel">
-    <div id="control">
-        <a id="avanzar" href="#">AVANZAR</a>
-        <a id="retroceder" href="#">RETROCEDER</a>
-    </div>
-    <div id="divParaImg"></div>
-</div>
-<!-- FIN carrousel -->
-
+<!-- CARROUSEL -->
+                <figure>
+                    <div class="carrousel">
+                        <div id="control">
+                            <a id="retroceder" href="#">
+                                <img src="img/flecha.png" alt="Retroceder" title="Retroceder">
+                            </a>
+                            <a id="avanzar" href="#">
+                                <img src="img/flecha.png" alt="Avanzar" title="Avanzar">
+                            </a>
+                        </div>
+                        <div id="divParaImg"></div>
+                    </div>
+                    <figcaption>Discografía completa de Estopa, de más reciente a sus orígenes</figcaption>
+                </figure>
+<!--//FIN CARROUSEL -->
             </main>
             <aside>
                 <section class="libro">
                     <h2>¡Últimas unidades!</h2>
-                        <a href="https://www.amazon.es/El-libro-Estopa-F-COLECCION/dp/8467057777/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2I1SOLUPRZZDN&dib=eyJ2IjoiMSJ9.UZJq3rB1Z6fxKJDmUZVahleBIrqXNw1MdxF-rsxTZfOnyIbxGJaMNjJOMj4AAp1arszzzPqtEfMCgXAOOIC6cxDGW172Z7hm6n6fj_-HWCx7WI-I1YSlb0kXJIyaOUcFy6gsSJVJXhdhc9pGxoM-GgDTVWns_wB8mPkGwcAXO7lSvkFvnk853RirogQXOIv1X1h3sBXm1_C0eH6Y5bL-W05uXC7RMYs1UWTwAcfbWZRRt3pYKkmujfSh6l3RUrf6KzCnZ-4jM7GjL25C8dIrZ4ieIefdBvYcYDWeN1qPEK0.O4RGE3GvuIL_nXreQrB36hdSbyhWV-Z8dEnTwA_P01w&dib_tag=se&keywords=libro+estopa&qid=1717183950&sprefix=libro+estopa%2Caps%2C92&sr=8-1" target="_blank">
-                            <img src="media/img/libro_estopa.jpg" alt="El Libro de Estopa">
-                        </a>
+                    <a href="https://www.amazon.es/El-libro-Estopa-F-COLECCION/dp/8467057777/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2I1SOLUPRZZDN&dib=eyJ2IjoiMSJ9.UZJq3rB1Z6fxKJDmUZVahleBIrqXNw1MdxF-rsxTZfOnyIbxGJaMNjJOMj4AAp1arszzzPqtEfMCgXAOOIC6cxDGW172Z7hm6n6fj_-HWCx7WI-I1YSlb0kXJIyaOUcFy6gsSJVJXhdhc9pGxoM-GgDTVWns_wB8mPkGwcAXO7lSvkFvnk853RirogQXOIv1X1h3sBXm1_C0eH6Y5bL-W05uXC7RMYs1UWTwAcfbWZRRt3pYKkmujfSh6l3RUrf6KzCnZ-4jM7GjL25C8dIrZ4ieIefdBvYcYDWeN1qPEK0.O4RGE3GvuIL_nXreQrB36hdSbyhWV-Z8dEnTwA_P01w&dib_tag=se&keywords=libro+estopa&qid=1717183950&sprefix=libro+estopa%2Caps%2C92&sr=8-1" target="_blank">
+                        <img src="img/libro_estopa.jpg" alt="El Libro de Estopa">
+                    </a>
                 </section>
+            </div>
                 <section class="biografia">
                     <h2>Estopa por Jordi Évole</h2>
-                            <h3>Papa, ponme otra vez la 12</h3>
-                                <p>Esta es una de las frases que más escucho en el coche cuando llevo a mi hijo atrás. Él se encapricha de una canción y quiere que se la ponga todo el rato. Y la primera vez que nos pasó fue con un disco de Estopa. Será su primer recuerdo musical, y yo pensaré que algo he hecho bien como padre porque los primeros temas que se aprendió eran de unos amigos míos de Cornellà.</p>
-                                <p>El David y el Jose también se aprendieron sus primeras canciones en el coche, escuchando las cintas de los Chichos que le ponía su padre camino de Extremadura.  Y en el coche es donde ahora ellos me ponen sus nuevos temas. Porque con el Jose y el David pasa una cosa. Tu quedas con ellos, te montan en su vehículo, y siempre llevan alguna grabación nueva que te ponen para que la escuches, para ver como reaccionas, mientras ellos van comentando: “Esa guitarra hay que subirla, ese tono está muy bajo, aquello entra tarde…”. Y cuando acaba la canción, se giran y te miran con esos ojillos brillantes de ilusión, como si fuese el primer tema que componen. Y esa es la gracia. Que no hayan perdido esas ganas. Algunos pronosticaron que lo de Estopa iba a ser flor de un día, que esto de los dos hermanos excurrantes de la SEAT estaba muy bien como reclamo marketinero, pero que su éxito iba a durar menos que la raja de una falda. Pero se olvidaron que lo que a veces parece marketing resulta que es auténtico. Y que cuando sales de abajo no se te olvida tan fácilmente de donde vienes, no se te olvida que la suerte existe pero mejor que te pille currando, y es lo que ellos no han parado de hacer estos más de 15 años.</p>
-                                <p>Poquito a poco me han ido colocando sus temas como tracks de la banda sonora de mi vida. Los dos chavales que se ponían en el campillo de delante de mi casa de Cornellà, con dos guitarras y se pasaban la tarde entera rasgándola.</p>
-                                <p>Qué orgulloso estoy de vosotros. De que seáis tan buena gente. De que no se os haya ido la olla. O de que se os vaya pero nunca por culpa del éxito. De que hayáis sabido madurar tan  bien. Sin tonterías. Sin concesiones. Haciendo lo que sabéis hacer y cada vez mejor. Es como si llevaseis quince años haciendo el triplete.</p>
-                                <p>Qué ganas me están entrando de subirme en el coche, poner “Pastillas para dormir” a toda hostia, y dejarme la voz cantándola, acelerando un poco más, sin pa pa pastillas de freno, con el run run de mi mundo interior, hasta que me falte el aliento. Rumba a lo desconocido.</p>
+                    <h3>Papa, ponme otra vez la 12</h3>
+                    <p>Esta es una de las frases que más escucho en el coche cuando llevo a mi hijo atrás. Él se encapricha de una canción y quiere que se la ponga todo el rato. Y la primera vez que nos pasó fue con un disco de Estopa. Será su primer recuerdo musical, y yo pensaré que algo he hecho bien como padre porque los primeros temas que se aprendió eran de unos amigos míos de Cornellà.</p>
+                    <p>El David y el Jose también se aprendieron sus primeras canciones en el coche, escuchando las cintas de los Chichos que le ponía su padre camino de Extremadura.  Y en el coche es donde ahora ellos me ponen sus nuevos temas. Porque con el Jose y el David pasa una cosa. Tu quedas con ellos, te montan en su vehículo, y siempre llevan alguna grabación nueva que te ponen para que la escuches, para ver como reaccionas, mientras ellos van comentando: “Esa guitarra hay que subirla, ese tono está muy bajo, aquello entra tarde…”. Y cuando acaba la canción, se giran y te miran con esos ojillos brillantes de ilusión, como si fuese el primer tema que componen. Y esa es la gracia. Que no hayan perdido esas ganas. Algunos pronosticaron que lo de Estopa iba a ser flor de un día, que esto de los dos hermanos excurrantes de la SEAT estaba muy bien como reclamo marketinero, pero que su éxito iba a durar menos que la raja de una falda. Pero se olvidaron que lo que a veces parece marketing resulta que es auténtico. Y que cuando sales de abajo no se te olvida tan fácilmente de donde vienes, no se te olvida que la suerte existe pero mejor que te pille currando, y es lo que ellos no han parado de hacer estos más de 15 años.</p>
+                    <p>Poquito a poco me han ido colocando sus temas como tracks de la banda sonora de mi vida. Los dos chavales que se ponían en el campillo de delante de mi casa de Cornellà, con dos guitarras y se pasaban la tarde entera rasgándola.</p>
+                    <p>Qué orgulloso estoy de vosotros. De que seáis tan buena gente. De que no se os haya ido la olla. O de que se os vaya pero nunca por culpa del éxito. De que hayáis sabido madurar tan  bien. Sin tonterías. Sin concesiones. Haciendo lo que sabéis hacer y cada vez mejor. Es como si llevaseis quince años haciendo el triplete.</p>
+                    <p>Qué ganas me están entrando de subirme en el coche, poner “Pastillas para dormir” a toda hostia, y dejarme la voz cantándola, acelerando un poco más, sin pa pa pastillas de freno, con el run run de mi mundo interior, hasta que me falte el aliento. Rumba a lo desconocido.</p>
                 </section>
             </aside>
         </div>
@@ -81,33 +96,35 @@
             <nav class="redes">
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/estopaoficial" target="_blank"><img src="media/icon/face-icono.png" alt="Facebook"></a>
+                        <a href="https://www.facebook.com/estopaoficial" target="_blank">
+                            <img src="img/icon_face.png" alt="Facebook">
+                        </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/estopaoficial" target="_blank"><img src="media/icon/twitter-icono.png" alt="Twitter"></a>
+                        <a href="https://twitter.com/estopaoficial" target="_blank">
+                            <img src="img/icon_twitter.png" alt="Twitter">
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/channel/UC5eRTh1u9ZQiFc9Iq569O2Q" target="_blank"><img src="media/icon/youtube-icono.png" alt="Youtube"></a>
+                        <a href="https://www.youtube.com/channel/UC5eRTh1u9ZQiFc9Iq569O2Q" target="_blank">
+                            <img src="img/icon_youtube.png" alt="Youtube">
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/estopaoficial/" target="_blank"><img src="media/icon/instagram-icono.png" alt="Instagram"></a>
+                        <a href="https://www.instagram.com/estopaoficial/" target="_blank">
+                            <img src="img/icon_instagram.png" alt="Instagram">
+                        </a>
                     </li>
                 </ul>
             </nav>
-            <p><span>Created by: <a href="https://github.com/suli92bcn?tab=repositories" target="_blank">suli92bcn</a>©</span></p>
+            <p><a id="firma" href="https://suli92bcn.github.io/CV/" target="_blank"><strong>© 2024 Gonzalo Cabezas</strong></a></p>
         </footer>
 <!-- BLOQUE COOKIES -->
         <div id="barraaceptacion" style="display: block;">
-            <div class="inner">
-                <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.</p>
-                <p>
-                    <a href="#" class="ok" id="aceptarBtn">OK</a> | 
-                    <a href="http://politicadecookies.com" target="_blank" class="info">Más información</a>
-                </p>
-            </div>
+            <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies. <a href="#" class="ok" id="aceptarBtn" title="Seguir navegando">Continuar</a> | <a href="http://politicadecookies.com" target="_blank" class="info" title="Política de cookies">Más información</a></p>
         </div>
-        <script type="module" src="js/cookies.js"></script>
 <!--//FIN BLOQUE COOKIES -->
+        <script type="module" src="js/estopa.js"></script>
         <script src="js/disc.js"></script>
     </body>
 </html>

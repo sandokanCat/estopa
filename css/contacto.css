@@ -1,22 +1,13 @@
-@import url(header.css);
-@import url(footer.css);
-#izquierda {
-    display: inline-flex;
-    justify-content: flex-start;
-}
-#derecha {
-    display: inline-flex;
-    justify-content: flex-end;
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
 }
 fieldset {
+    background-color: black;
     border: 2px solid white;
     border-radius: 10px;
     padding: 30px;
-    width: 90%;
-}
-fieldset:hover {
-    border-color: rgb(108, 8, 133);
-    transition: 1s;
+    width: 95%;
 }
 legend {
     text-align: center;
@@ -33,31 +24,24 @@ label {
     display: block;
     margin-bottom: 10px;
 }
-input, textarea, select {
+input, textarea {
     background-color: transparent;
     border-color: white;
     border-radius: 10px;
     color: white;
     width: 100%;
 }
-optgroup {
-    color: rgb(108, 8, 133);
-}
-option {
-    color: black;
-}
-input:hover, textarea:hover, select:hover {
+input:hover, textarea:hover {
     border-color: rgb(108, 8, 133);
     transition: 1s;
 }
 input:focus, textarea:focus {
-    background-color: rgb(108, 8, 133);
-    border-color: white;
+    background-color: rgba(108, 8, 133, 0.3);
     box-shadow: none;
     outline: none;
 }
 #mensaje {
-    height: 350px;
+    height: 90px;
 }
 button {
     margin-top: 30px;
@@ -77,4 +61,11 @@ button:focus {
     border: white solid 2px;
     box-shadow: none;
     outline: none;
+}
+p {
+    text-align: center;
+    font-size: x-small;
+}
+a {
+    color: rgb(108, 8, 133);
 }

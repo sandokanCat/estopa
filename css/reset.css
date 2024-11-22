@@ -8,6 +8,5 @@
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
-/* AÑADIDO POR GERARD-GPT */
-        box-sizing: border-box;
+        box-sizing: border-box; /* AÑADIDO POR GERARD-GPT */
    }

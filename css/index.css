@@ -1,5 +1,4 @@
 @import url(header.css);
-@import url(conciertos.css);
 @import url(footer.css);
 main {
     display: flex;
@@ -23,4 +22,36 @@ main h3 {
 main a {
     text-decoration: none;
     color: white;
+}
+.conciertos {
+    width: 100%;
+}
+.conciertos div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.conciertos p {
+    padding-right: 20px;
+}
+.textLila {
+    color: rgb(108, 8, 133);
+}
+.conciertos a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(108, 8, 133);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border:rgb(108, 8, 133) solid 2px;
+}
+.conciertos a:hover {
+    border: white solid 2px;
+    transition: 1s;
+}
+@media screen and (max-width: 759px) {
+    .conciertos div {
+        flex-direction: column;
+        text-align: center;
+    }
 }
